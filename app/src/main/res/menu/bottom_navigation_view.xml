@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recents"
+        android:icon="@mipmap/ic_launcher"
+        android:title="2342" />
+
+    <item
+        android:id="@+id/favourites"
+        android:icon="@mipmap/ic_launcher"
+        android:title="打发" />
+
+    <item
+        android:id="@+id/nearby"
+        android:icon="@mipmap/ic_launcher"
+        android:title="打发打发" />
+    <item
+        android:id="@+id/nearby3"
+        android:icon="@mipmap/ic_launcher"
+        android:title="阿凡达发" />
+</menu>

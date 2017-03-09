@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HopeFinance</string>
+    <string name="xwjr">xwjr</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_net_connect">当前网络不畅通</string>
+</resources>
