@@ -43,12 +43,6 @@ public class HasNetReceiver extends BroadcastReceiver {
                     handler.sendMessage(message);
                 }
             }
-//			if (wifiNetInfo != null && wifiNetInfo.isConnected()) {
-//				return;
-//			}
-//			if (mobNetInfo != null && mobNetInfo.isConnected()) {
-//				return;
-//			}
         } catch (SecurityException e) {
             // TODO: handle exception
             LogUtils.e(e);

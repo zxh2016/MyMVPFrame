@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentManager;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
-import com.xwjr.utilcode.utils.ToastUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +40,7 @@ public class MainActivity extends BaseActivity {
         setBottomNavigationBar();
         setFragmentList();
         fragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.fragment_enter, R.anim.fragment_exit)
+                .setCustomAnimations(R.anim.fragment_enter_alpha, R.anim.fragment_exit_alpha)
                 .replace(R.id.frame_layout, fragmentList.get(0))
                 .commit();
     }
@@ -54,9 +53,8 @@ public class MainActivity extends BaseActivity {
         bottomNavigationBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int i) {
-                ToastUtils.showShortToast("choose       "+i+"    Fragment");
                 fragmentManager.beginTransaction()
-                        .setCustomAnimations(R.anim.fragment_enter, R.anim.fragment_exit)
+                        .setCustomAnimations(R.anim.fragment_enter_alpha, R.anim.fragment_exit_alpha)
                         .replace(R.id.frame_layout, fragmentList.get(i))
                         .commit();
             }
